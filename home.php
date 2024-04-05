@@ -40,7 +40,7 @@ include('head.php'); ?>
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image\life-linker.jpg" alt="image\life-linker.jpg" width="50%" height="500">
+        <img src="image\blood_drop_logo.jpg" alt="image\life-linker.jpg" width="50%" height="500">
 	                	
       </div>
 	  <div class="carousel-item">
