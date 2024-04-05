@@ -25,10 +25,20 @@ include('head.php'); ?>
 
 </div>
 <?php include'ticker.php'; ?>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <img src="./image/blood_drop_logo.jpg" style = "height : 100px"> 
+          </div>     
+        </div>
+    </div>
+</div>
 
   <div id="page-container" style="margin-top:50px; position: relative;min-height: 84vh;   ">
     <div class="container">
     <div id="content-wrap"style="padding-bottom:75px;">
+    
   <div id="demo" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
@@ -40,8 +50,7 @@ include('head.php'); ?>
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image\blood_drop_logo.jpg" alt="image\life-linker.jpg" width="50%" height="500">
-	                	
+        <img src="image\life_linker.jpg" alt="image\life-linker.jpg" width="100%" height="500">        	
       </div>
 	  <div class="carousel-item">
 	  <img src="image\blood_don.jpg" alt="image\blood_don.jpg" width="100%" height="500">
