@@ -5,5 +5,5 @@ include 'conn.php';
 $sql= "DELETE FROM contact_query where query_id={$que_id}";
 $result=mysqli_query($conn,$sql);
 mysqli_close($conn);
-
+header('location: query.php');
  ?>
