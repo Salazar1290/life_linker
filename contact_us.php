@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="image/favicon.ico"/>
 </head>
 
-<body>
+<body style="background-color:lightblue;">
 <?php $active ='contact';
 include 'head.php'; ?>
 <?php

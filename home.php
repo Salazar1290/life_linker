@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="icon" type="image/x-icon" href="image/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="image/favicon(2).ico"/>
 <style>
 </style>
 </head>
@@ -29,7 +29,7 @@ include('head.php'); ?>
     <div class="row">
         <div class="col-12">
           <div class="text-center">
-            <img src="./image/blood_drop_logo.jpg" style = "height : 100px"> 
+            <img src="./image/logo.png" style = "height : 250px"> 
           </div>     
         </div>
     </div>
@@ -152,7 +152,7 @@ include('head.php'); ?>
            ?>
             <div class="col-lg-4 col-sm-6 portfolio-item" ><br>
             <div class="card" style="width:300px">
-                <img class="card-img-top" src="image\blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px">
+                <img class="card-img-top" src="image\lifelinker.png" alt="Card image" style="width:100%;height:300px">
                 <div class="card-body">
                   <h3 class="card-title"><?php echo $row['donor_name']; ?></h3>
                   <p class="card-text">

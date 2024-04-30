@@ -14,6 +14,10 @@
 <style>
 </style>
 <body>
+<nav style="background: linear-gradient( 
+                to right, #fe6869,  #f34e4c,  
+                  #8A0302, #e5393d);  
+                padding: 10px 0;"> 
 
 
 <?php 
@@ -44,7 +48,10 @@ include('head.php');
 
     </div>
     <div class="col-lg-6">
-        <img class="img-fluid rounded" src="image\banner_590x300.jpg" style="height:400px" alt="error"  >
+    <a href="http://localhost/blood/life_linker/home.php">
+        <img class="img-fluid rounded" src="image\about_us.jpg" style="height:400px" alt="error" >
+        </a>
+       
     </div>
 </div>
 </div></div>
@@ -52,6 +59,7 @@ include('head.php');
 <?php include('footer.php')
 ?>
 </div>
+</nav>
 </body>
 
 </html>

@@ -18,8 +18,8 @@
 <body>
 
   <div id="footer" >
-  <b><center>COPYRIGHT © 2024<br>
-  Blood Bank & Donation Management
+  
+  LIFE-LINKER
   <br>
   <?php
   $conn=mysqli_connect("localhost","root","","blood_donation") or die("Connection error");
@@ -29,7 +29,7 @@
   ?>
   DONORS ENROLLED :<b style='color: yellow;'> <?php echo $num_rows; ?></b>
   <br>
-  ALL RIGHTS RESERVED.
+  
   </center>
   </div>
 
