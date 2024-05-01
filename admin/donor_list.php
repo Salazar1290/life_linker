@@ -82,6 +82,7 @@ include 'conn.php';
           <th style="text-align:center">Age</th>
           <th style="text-align:center">Gender</th>
           <th style="text-align:center">Blood Group</th>
+          <th style="text-align:center">Date</th>
           <th style="text-align:center">Address</th>
           <th style="text-align:center">Action</th>
           </thead>
@@ -96,6 +97,7 @@ include 'conn.php';
                   <td><?php echo $row['donor_age']; ?></td>
                   <td><?php echo $row['donor_gender']; ?></td>
                     <td><?php echo $row['blood_group']; ?></td>
+                    <td><?php echo $row['entry_date']; ?></td>
                     <td><?php echo $row['donor_address']; ?></td>
                     <td id="he" style="width:100px">
                     <a style="background-color:aqua" href='delete.php?id=<?php echo $row['donor_id']; ?>'> Delete </a>
