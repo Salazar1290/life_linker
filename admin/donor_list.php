@@ -82,13 +82,21 @@ include 'conn.php';
           <th style="text-align:center">Age</th>
           <th style="text-align:center">Gender</th>
           <th style="text-align:center">Blood Group</th>
+          <th style="text-align:center">Hospital</th>
           <th style="text-align:center">Date</th>
           <th style="text-align:center">Address</th>
           <th style="text-align:center">Action</th>
           </thead>
           <tbody>
             <?php
-            while($row = mysqli_fetch_assoc($result)) { ?>
+            while($row = mysqli_fetch_assoc($result)) { 
+              $hosp = $row['hospital_id'];
+              $sql1 = "select * from hospital_search where hospital_search.id={$hosp}";
+              $result1 = mysqli_query($conn, $sql1);
+              $row1 = mysqli_fetch_assoc($result1);
+              $hospital_name = $row1['hospital_name'];
+
+              ?>
           <tr>
                   <td><?php echo $count++; ?></td>
                   <td><?php echo $row['donor_name']; ?></td>
@@ -97,6 +105,7 @@ include 'conn.php';
                   <td><?php echo $row['donor_age']; ?></td>
                   <td><?php echo $row['donor_gender']; ?></td>
                     <td><?php echo $row['blood_group']; ?></td>
+                    <td><?php echo $hospital_name; ?></td>
                     <td><?php echo $row['entry_date']; ?></td>
                     <td><?php echo $row['donor_address']; ?></td>
                     <td id="he" style="width:100px">

@@ -75,6 +75,21 @@ $active ='donate';
 <div class="col-lg-4 mb-4">
 <div class="font-italic">Address<span style="color:red">*</span></div>
 <div><textarea class="form-control" name="address" required></textarea></div></div>
+<div class="col-lg-4 mb-4">
+<div class="font-italic">Hospital<span style="color:red">*</span></div>
+<div><select name="hospital" class="form-control" required>
+  <option value=""selected disabled>Select</option>
+  <?php
+    include 'conn.php';
+    $sql= "select * from hospital_search";
+    $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
+  while($row=mysqli_fetch_assoc($result)){
+   ?>
+   <option value=" <?php echo $row['id'] ?>"> <?php echo $row['hospital_name'] ?> </option>
+  <?php } ?>
+</select>
+</div>
+</div>
 </div>
 <div class="row">
   <div class="col-lg-4 mb-4">

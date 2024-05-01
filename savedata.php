@@ -7,6 +7,7 @@ $email=$_POST['emailid'];
 $age=(int)$_POST['age'];
 $gender=$_POST['gender'];
 $blood_group=$_POST['blood'];
+$hospital = (int)$_POST['hospital'];
 $address=$_POST['address'];
 if (intval($age) >=65 || intval($age) < 18) {
 	?>
@@ -23,7 +24,7 @@ else {
 <body>
 <?php
 $conn=mysqli_connect("localhost","root","","blood_donation") or die("Connection error");
-$sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,donor_gender,donor_blood,donor_address) values('{$name}','{$number}','{$email}','{$age}','{$gender}','{$blood_group}','{$address}')";
+$sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,donor_gender,donor_blood,donor_address,hospital_id) values('{$name}','{$number}','{$email}','{$age}','{$gender}','{$blood_group}','{$address}',{$hospital})";
 $result=mysqli_query($conn,$sql);
 
 mysqli_close($conn);
