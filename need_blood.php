@@ -80,7 +80,7 @@
               <b>Gender : </b><?php echo $row['donor_gender']; ?><br>
               <b>Age : </b> <?php echo $row['donor_age']; ?><br>
               <b>Address : </b> <?php echo $row['donor_address']; ?><br>
-              <b>Hospital : </b><span style="color: yellow;"> <?php echo $hospital_name; ?></span><br>
+              <b>Hospital : </b> <?php echo $hospital_name; ?><br>
             </p>
 
           </div>
