@@ -33,7 +33,7 @@ $active ='donate';
 </div>
 <div class="col-lg-4 mb-4">
 <div class="font-italic">Mobile Number<span style="color:red">*</span></div>
-<div><input type="text" name="mobileno" class="form-control" required></div>
+<div><input type="tel" name="mobileno" placeholder="(+91)" class="form-control" pattern="[0-9]{10}" required></div>
 </div>
 <div class="col-lg-4 mb-4">
 <div class="font-italic">Email Id</div>
