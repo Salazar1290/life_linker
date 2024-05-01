@@ -42,7 +42,7 @@ $active ='donate';
 </div>
 <div class="row">
 <div class="col-lg-4 mb-4">
-<div class="font-italic">Age(below 60)<span style="color:red">*</span></div>
+<div class="font-italic">Age<span style="color:red">*</span></div>
 <div><input type="text" name="age" class="form-control" required></div>
 </div>
 <div class="col-lg-4 mb-4">
