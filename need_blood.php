@@ -62,6 +62,11 @@
   $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
     if(mysqli_num_rows($result)>0)   {
     while($row = mysqli_fetch_assoc($result)) {
+      $hosp = $row['hospital_id'];
+              $sql1 = "select * from hospital_search where hospital_search.id={$hosp}";
+              $result1 = mysqli_query($conn, $sql1);
+              $row1 = mysqli_fetch_assoc($result1);
+              $hospital_name = $row1['hospital_name'];
       ?>
 
       <div class="col-lg-4 col-sm-6 portfolio-item" ><br>
@@ -75,6 +80,7 @@
               <b>Gender : </b><?php echo $row['donor_gender']; ?><br>
               <b>Age : </b> <?php echo $row['donor_age']; ?><br>
               <b>Address : </b> <?php echo $row['donor_address']; ?><br>
+              <b>Hospital : </b><span style="color: yellow;"> <?php echo $hospital_name; ?></span><br>
             </p>
 
           </div>
