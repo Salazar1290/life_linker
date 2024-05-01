@@ -8,14 +8,16 @@ $age=(int)$_POST['age'];
 $gender=$_POST['gender'];
 $blood_group=$_POST['blood'];
 $address=$_POST['address'];
-if (intval($age) >=65 && intval($age) < 18) {
+if (intval($age) >=65 || intval($age) < 18) {
 	?>
 	<script>
 	 alert("cannot exceed 60 or be less than 18")
+	 window.location = "home.php"
 	 </script>
 		<?php
 	// header("location: ./home.php");
 }
+else {
  ?>
 	</head>
 <body>
@@ -25,9 +27,12 @@ $sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,do
 $result=mysqli_query($conn,$sql);
 
 mysqli_close($conn);
+header("location: home.php");
 
 // echo "HELLO";
-header("location: home.php");
+}
+
+
 ?>
 hi
 </body>
